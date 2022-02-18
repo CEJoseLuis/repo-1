@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    /*Filas y columnas, 1fr-1 fracción*/
+    grid-template-columns: repeat(2,1fr);
+    /*Modificando el espacio que ocupa cada columna*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    grid-template-rows: repeat(3,250px);/*Solo 3 filas van a medir 250px*/
+    column-gap: 100px;/*Separación entre columna*/
+    row-gap: 50px;
+}
+div{
+    background-color: blue;
+    padding: 2rem;/*rem medida relacional*/
+    color: #fff;
+}
+.g6{
+    /*Mover div #6*/
+    grid-column: 1;
+    grid-row: 1;
+}

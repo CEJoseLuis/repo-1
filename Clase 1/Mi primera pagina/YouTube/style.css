@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    font-size: 2vh;
+    color: black;
+}
+html{
+    font-size: 62.5%;/*1rem es igual a 10px, el default es de 16px*/
+}
+header{
+    height: 9vh;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 5px;
+    z-index: 10;
+}
+img,span,button{
+    cursor: pointer;/*Aparace la manita con el dedo al acercarse a cualquier img*/
+}
+.left{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    margin-left: 10px;
+}
+.left img{
+    margin: 10px;
+}
+.middle{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.barra{
+    border: 1px solid rgba(216, 208, 208, 0.938);
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.barra input{
+    border: transparent;
+    width: 500px;
+}
+.middle span{
+    margin-left: 5px;
+}
+.right{
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+.logo{
+    width: 70px;
+}
+/**********************/
+.barral{
+    margin-top: 0;
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+}
+.barral a{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 8%;
+    margin-top: 8%;
+}
+.barral a span,img{
+    margin-right: 10px;/*Icono con texto*/
+}
+.barral img{
+    width: 25px;
+    border-radius: 50%;
+}
+.barral h2{
+    font-size: 1.5rem;
+}
+.barrah{
+    display: block;
+    position: fixed;
+    width: 83%;
+    height: 8vh;
+    margin-top: 0;
+    margin-left: 17%;
+}
+.barrah .divh{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.barrah div button{
+    font-size: 2vh;
+    background-color: rgba(245, 238, 238, 0.822);
+    padding: 0.7vh 1.5vh;
+    border-radius: 15%;
+    border:solid 1px #41403E;
+}
+
+.lista{
+    margin-top: 8vh;
+    margin-left: 17%;
+    background-color: rgb(255, 250, 250);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px,200px));
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+}
+.video{
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2vh;
+}
+.video .vid{
+    width: 100%;
+}
+.video .canal{
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+.descripcion{
+    display: flex;
+}
+.

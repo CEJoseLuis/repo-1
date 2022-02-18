@@ -1,0 +1,58 @@
+/*Recordatorio: Etiquetas solas, id con #, clases con .   */
+/*Lo mas importante es el id, despues la clase y por ultimo la etiqueta*/
+body{
+    color: green;/*Es el principal*/
+    font-family: 'Syne Tactile', cursive;
+}
+
+
+body .class .other-class{/**Se lee de izquierda a derecha, de lo general a lo específico*/
+    background-color: bisque;/*Solo lo tendrá el other-class*/
+}
+
+.class p{
+    background-color: aqua;
+}
+/*
+.class p{
+    color:brown;
+    font-weight: bold;
+}
+
+.class .class-two p{
+    color: white;
+}
+*/
+.other-class p{
+    background-color: violet;
+    text-transform: uppercase;/*Todo el enunciado en mayuscula*/
+}
+
+#botonUno {
+    background-color: rgb(245, 31, 245);
+}
+#botonUno:hover{/*Esta es una pseudoclase*/
+    background-color: white;/*Cuando se acerca el mouse, se cambia el color del boton*/
+    color: green;
+}
+
+/*Tomar en cascada lo más importante*/
+h1{
+    color: blue;
+}
+h1{
+    color: darkgoldenrod;
+}
+.titulo-principal{
+    color: red;
+}
+#especial{
+    color: darkmagenta !important;/*Con important se obliga a seguir el color*/
+}
+#especial{
+    color:tomato;
+    text-align: center;
+}
+ul{
+    list-style: none;/*Puntos de la lista, generalmente es none*/
+}

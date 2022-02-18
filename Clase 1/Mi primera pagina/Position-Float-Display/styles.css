@@ -1,0 +1,96 @@
+*{/*Por defecto, el avegador siempre agregá margen y todos son STATIC*/
+    margin: 0px;
+    padding: 0px;/*Con eso ya mo hay padding ni margin*/
+    box-sizing: border-box;/*Para no pasarse del tamaño*/
+}
+#content-box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    box-sizing: content-box;
+    border: 5px solid black;
+    padding: 10px;
+}
+#border-box{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    box-sizing: border-box;
+    border: 5px solid black;
+    padding: 10px;
+}
+section {
+    margin: 10px;
+    border: 2px solid black;
+  }
+div{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+.posiciones{/*Es el elemento PADRE*/
+    border: 2px solid black;
+    margin: 10px;
+    position: relative;/*Si quito el RELATIVE, entonces el hijo ABSOLUTE toma al Body*/
+}
+.relative{
+    background-color: red;
+    position: relative;/*Las distancias son con recpecto al PADRE*/
+    top: 100px;
+    left: 100px;
+    z-index: 1000;/*-1 es atras, 1-1000 a delante*/
+}
+.absolute{/*Si no encuentra un padre relativo, si no, entonces toma el contenedor RELATIVO
+    inicial mas cercano, si no entonces va hacia BODY*/
+    background-color: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.fixed{/*Toma en cuenta la Pantalla*/
+    background-color: green;
+    width: 50px;/*0 en 0-100%*/
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+.div-sticky{
+    background-color: pink;
+    height: 400px;
+    overflow: scroll;
+}
+.sticky{/*Toma en cuenta al Papá*/
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+}
+.display{
+    width: 100px;
+    background-color: gray;
+    display: inline;/*No toma en cuenta el W,H, solo los coloca una tras otro*/
+}
+.display-inline-block{
+    width: 100px;
+    background-color: gray;
+    display: inline-block;/*Toma en cuenta el W,H*/
+}
+.aside{
+    float: left;
+    width: 20%;
+    height: 500px;
+}
+.middle{
+    float: left;
+    clear: left;
+    background-color: yellow;
+    width: 5%;
+    height: 500px;
+}
+.news{
+    float: right;
+    width: 70%;
+    height: 500px;
+}

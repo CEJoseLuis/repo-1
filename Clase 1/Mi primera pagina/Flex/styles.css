@@ -1,0 +1,54 @@
+.padre{
+    display: flex;/*Su comportamietos natural es row, flex direction es row*/
+    background-color: red;
+    width: 800px;
+    height: 800px;;
+    /*row,column,row-reverse,column-reverse*/
+    flex-direction: row;/*Propiedad que dice la dirección de los hijos*/
+    /*Los hijos se van adaptando al tamaño del papá*/
+
+    /*Row es el eje primario, column en el eje secundario*/
+    justify-content: center;/*Alinear en el eje principal-space-...*/
+    align-items: center;/*Alinear en el eje secundario-center-end-start*/
+    /*No respeta el tamaño del hijo*/
+    /*flex-wrap: nowrap;*/
+    /*Respeta el tamaño del hijo, y si no alcanza se pasa a la otra linea*/
+    flex-wrap: wrap;
+}
+.hijo{
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;/*Ajusta a h,w lo que genera que los bordes sean hacia adentro*/
+    width: 100px;
+    height: 100px;
+    background-color: rgb(205, 50, 184);
+    border: 2px solid black;
+    /*Haciendo a los hijos flex, para poder alinear a sus propios hijos al centro*/
+    display: flex;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+
+
+.rebelde{
+    /*En el HTML esta como .hijo rebelde, primero le afecta el hijo y depsues el rebelde*/
+    align-self: flex-end;
+}
+#hijo2{
+    /*align-self: Es para un elemento hijo diferente (rebelde)*/ 
+    /*Alinear en el eje secundario*/
+    align-self: flex-end;
+}
+.hijo:nth-of-type(2){/*Es para tomar cualquier elemento de una clase*/
+    align-self: flex-end;
+    background-color: aqua;
+    order: 1;
+}
+/*Order, cambiar el flujo de los elemntos, order: 0-1-2-etc.*/
+.hijo:nth-of-type(3){
+    background-color: green;
+    order: 2;
+}
+
+
+
