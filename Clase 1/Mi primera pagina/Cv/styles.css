@@ -1,0 +1,83 @@
+/*Por etiqueta */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Work Sans', sans-serif;
+}
+body{
+    background-color: rgb(223, 223, 245);
+    color: black;
+}
+
+header{
+    width: 1200px;
+    height: 300px;
+    background-color: rgb(71, 129, 255);
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px 50px 5px 50px;  
+    border-radius: 25%;
+}
+.menu{
+    padding-top: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+.menu  ul{
+    display: flex;
+    justify-content: space-around;
+}
+#estudios,#skills,#datos,#experiencia{
+    padding-top: 30px;
+    width: 100%;
+    margin-left: 50px;
+}
+#datos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.izq{
+    width: 30%;
+}
+.der{
+    width: 50%;
+}
+.der img{
+    width: 90%;
+    height: 100px;
+}
+.titulo1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.titulo2{
+    font-size: 15px;
+    font-weight: bold;
+}
+h1{
+    font-size: 25px;
+}
+
+.image-profile{
+    border-radius: 50%;
+    width: 200px;
+    float: left;
+}
+
+#boton {
+    background-color: rgb(31, 184, 245);
+    border-radius: 20%;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+#boton:hover{/*Esta es una pseudoclase*/
+    background-color: rgb(255, 255, 255);/*Cuando se acerca el mouse, se cambia el color del boton*/
+}
+footer{
+    margin-top: 50px;
+}
